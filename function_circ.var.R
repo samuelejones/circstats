@@ -24,16 +24,16 @@ circ.var <- function(m,int,na.rm=T) { ### v4
          arcmax <- max(m[maxcdiffind],m[maxcdiffind+1])
       }
 
-      # rotate arc so it no longer crosses midnight
+      # rotate arc so it no longer crosses 0/int
       rotateby <- int-arcmax
       m <- (m+rotateby)%%int
 
-      # calculate standard mean, then rotate back by rotated amount
+      # calculate variance using rotated points
       cv <- var(m)
 
    } else {
 
-      # calculate standard mean if arc does not contain midnight
+      # calculate standard variance if arc does not contain 0/int
       cv <- var(m)
 
    }

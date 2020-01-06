@@ -27,7 +27,7 @@ circ.min <- function(m,int,na.rm=T) { ### v7
 
    } else {
 
-      # calculate standard mean if arc does not contain midnight
+      # calculate standard min if arc does not contain 0/int
       cm <- min(m)
 
    }

@@ -31,7 +31,7 @@ circ.range <- function(m,int,na.rm=T) { ### v7
 
    } else {
 
-      # calculate standard mean if arc does not contain midnight
+      # calculate standard range if arc does not contain 0/int
       cr <- max(m)-min(m)
 
    }

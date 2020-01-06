@@ -33,7 +33,7 @@ circ.mean <- function(m,int,na.rm=T) { ### v7
 
    } else {
 
-      # calculate standard mean if arc does not contain midnight
+      # calculate standard mean if arc does not contain 0/int
       cm <- mean(m)
 
    }
