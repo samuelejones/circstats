@@ -1,6 +1,7 @@
 # circstats
 R functions to perform circular statistics
 
+The scripts define the arc containing all points by calculating the shortest arc length that contains all the points. The scripts then rotate the arc so that all points are contained within the same periodic window and calculates simple statistics. For the min, max and mean, the values are then rotated back by the original amount (and then the modulo taken) in order to get the correct values.
 
 This repository contains the following scripts:
 
